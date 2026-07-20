@@ -1,0 +1,996 @@
+.nokia-case {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding-top: var(--spacing-40);
+  padding-right: max(var(--spacing-40), env(safe-area-inset-right));
+  padding-bottom: var(--gutter-block-end);
+  padding-left: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.nokia-case [id^='nokia-'],
+.nokia-case [id^='wise-'],
+.nokia-case [id^='sphere-'] {
+  scroll-margin-top: var(--spacing-40);
+}
+
+.nokia-case > :not(:first-child) {
+  margin-top: 100px;
+}
+
+.nokia-case__hero-group {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.nokia-case__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+
+.nokia-case__headline {
+  width: 100%;
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+  margin: 0;
+  font-size: var(--title-font-size);
+  font-weight: 700;
+}
+
+.nokia-case__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 675px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.nokia-case__meta-item,
+.nokia-case__meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nokia-case__meta-block--overview {
+  max-width: 693px;
+}
+
+.nokia-case__label {
+  font-family: var(--font-bricolage);
+  font-size: 16px;
+  font-weight: 400;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+
+.nokia-case__meta-value,
+.nokia-case__body {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  max-width: 675px;
+}
+
+.nokia-case__body-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 731px;
+}
+
+.nokia-case__cover {
+  width: 100%;
+  line-height: 0;
+}
+
+.nokia-case__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nokia-case__section--design-process,
+.nokia-case__section--discovery,
+.nokia-case__section--user-testing,
+.nokia-case__section--contributions {
+  gap: 64px;
+}
+
+.nokia-case__section--problem .nokia-case__tags {
+  margin-top: 16px;
+}
+
+.nokia-case__section-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nokia-case__section-intro--discovery .nokia-case__body {
+  max-width: 693px;
+}
+
+.nokia-case__section-intro--discovery .nokia-case__title {
+  max-width: none;
+}
+
+.nokia-case__discovery-media {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+
+.nokia-case__discovery-figure {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 1374 / 568;
+  line-height: 0;
+}
+
+.nokia-case__discovery-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nokia-case__title {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__title--md {
+  font-size: clamp(20px, 1.5vw + 0.5rem, 24px);
+  max-width: 611px;
+}
+
+.nokia-case__title--lg {
+  font-size: clamp(24px, 2vw + 0.75rem, 32px);
+  max-width: 611px;
+}
+
+.nokia-case__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  list-style: none;
+}
+
+.nokia-case__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nokia-case__tag {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  background: #f6f7fb;
+}
+
+.nokia-case__figure-wrap {
+  width: 100%;
+  padding: 24px;
+  background: #f6f7fb;
+  box-sizing: border-box;
+}
+
+.nokia-case__figure-frame {
+  width: 100%;
+  aspect-ratio: 1372 / 477;
+  overflow: hidden;
+  border-radius: 16px;
+  line-height: 0;
+}
+
+.nokia-case__figure-shot {
+  display: block;
+  width: 101.88%;
+  max-width: none;
+  height: 164.36%;
+  margin-top: -0.07%;
+  margin-left: -1.88%;
+}
+
+.nokia-case__columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.nokia-case__columns--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nokia-case__column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: clamp(0px, 5vw, 96px);
+}
+
+.nokia-case__tool-note {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 675px;
+}
+
+.nokia-case__tool-note--with-icon {
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  max-width: none;
+}
+
+.nokia-case__tool-note--with-icon .nokia-case__tool-body {
+  max-width: 539px;
+}
+
+.nokia-case__tool-icons {
+  display: flex;
+  flex-shrink: 0;
+  gap: 16px;
+  align-items: center;
+}
+
+.nokia-case__tool-icon-frame {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nokia-case__tool-icon-frame img {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+.nokia-case__tool-icon-frame--cursor {
+  width: 32px;
+  height: 36px;
+}
+
+.nokia-case__tool-icon-frame--cursor img {
+  width: 133.33%;
+  height: 118.52%;
+  left: -16.67%;
+  top: -9.96%;
+}
+
+.nokia-case__tool-icon-frame--figma-make {
+  width: 32px;
+  height: 33px;
+}
+
+.nokia-case__tool-icon-frame--figma-make img {
+  width: 160%;
+  height: 152.38%;
+  left: -29.68%;
+  top: -25.59%;
+}
+
+.nokia-case__tool-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.nokia-case__tool-label {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #005aff;
+}
+
+.nokia-case__tool-body {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+
+.nokia-case__section--spacious {
+  gap: 64px;
+}
+
+.nokia-case__section--benchmark {
+  gap: 48px;
+}
+
+.nokia-case__subtitle {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: clamp(20px, 1.5vw + 0.5rem, 24px);
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  max-width: 611px;
+}
+
+.nokia-case__caption {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  opacity: 0.6;
+}
+
+.nokia-case__stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.nokia-case__stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+#wise-discovery .nokia-case__stat-block {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+#wise-findings .nokia-case__stat-grid {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+#wise-personas {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+#wise-usps .nokia-case__usp-rows {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+.nokia-case__stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+.nokia-case__stat-value {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__finding-title {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 16px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__stat-card .nokia-case__body {
+  max-width: none;
+}
+
+.nokia-case__stat-card .nokia-case__stat-value + .nokia-case__body {
+  font-size: 14px;
+}
+
+.nokia-case__stat-card .nokia-case__finding-title + .nokia-case__body {
+  font-size: 14px;
+}
+
+.nokia-case__section--personas {
+  gap: 48px;
+}
+
+.nokia-case__personas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 24px;
+  background: #f6f7fb;
+  box-sizing: border-box;
+}
+
+.nokia-case__persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.nokia-case__persona-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.nokia-case__persona-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nokia-case__persona-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.nokia-case__persona-avatar img {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+.nokia-case__persona-avatar-img--guest {
+  width: 398.8%;
+  height: 265.86%;
+  left: -223.5%;
+  top: -32.36%;
+}
+
+.nokia-case__persona-avatar-img--host {
+  width: 287.58%;
+  height: 191.72%;
+  left: -113.28%;
+  top: -3.71%;
+}
+
+.nokia-case__persona-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nokia-case__persona-role {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 24px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__persona-name,
+.nokia-case__persona-detail {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+
+.nokia-case__persona-bio {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__tag-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nokia-case__tags--pills {
+  gap: 16px;
+}
+
+.nokia-case__tag--pill {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__usp-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.nokia-case__section--validate {
+  gap: 32px;
+}
+
+.nokia-case__usability-number {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+#wise-usability-testing .nokia-case__stat-grid {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+.nokia-case__section--wireframes {
+  gap: 48px;
+}
+
+.nokia-case__section--business-plan {
+  gap: 48px;
+}
+
+.nokia-case__business-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.nokia-case__plan-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.nokia-case__plan-cards.nokia-case__plan-cards--row {
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.nokia-case__plan-cards.nokia-case__plan-cards--row .nokia-case__plan-card {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.nokia-case__key-partners {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.nokia-case__key-partners-label {
+  max-width: none;
+}
+
+.nokia-case__key-partners-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.nokia-case__key-partner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.nokia-case__key-partner-title {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 14px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: 1.5;
+  letter-spacing: -0.28px;
+}
+
+.nokia-case__key-partner-detail {
+  margin: 0;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.28px;
+}
+
+.nokia-case__go-to-market {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.nokia-case__section--business-plan > .nokia-case__go-to-market {
+  margin-top: 52px;
+}
+
+.nokia-case__gtm-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.nokia-case__go-to-market .nokia-case__tag {
+  letter-spacing: -0.28px;
+}
+
+.nokia-case__wireframes-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nokia-case__section--screens {
+  gap: 32px;
+}
+
+.nokia-case__screens-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+#wise-screens .nokia-case__screens-header .nokia-case__label {
+  line-height: 19px;
+}
+
+#wise-screens .nokia-case__subtitle,
+#wise-visual-design .nokia-case__subtitle,
+#wise-usps .nokia-case__subtitle,
+#wise-benchmark .nokia-case__subtitle,
+#wise-personas .nokia-case__subtitle,
+#wise-usability-testing .nokia-case__subtitle {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 700;
+  font-synthesis: weight;
+  line-height: 29px;
+  letter-spacing: -0.48px;
+}
+
+#wise-visual-design .nokia-case__label,
+#wise-personas .nokia-case__section-intro .nokia-case__label,
+#wise-usps .nokia-case__section-intro .nokia-case__label,
+#wise-benchmark .nokia-case__section-intro .nokia-case__label,
+#wise-usability-testing .nokia-case__section-intro .nokia-case__label {
+  line-height: 19px;
+}
+
+.nokia-case__screens-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nokia-case__nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+}
+
+#sphere-thanks,
+#wise-thanks,
+#nokia-thanks {
+  gap: 16px;
+}
+
+.nokia-case__nav-link:hover {
+  opacity: 0.6;
+}
+
+button.nokia-case__nav-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+#sphere-trends .nokia-case__subtitle,
+#sphere-surveys .nokia-case__subtitle,
+#sphere-user-journeys .nokia-case__subtitle,
+#sphere-usps .nokia-case__subtitle,
+#sphere-kpis .nokia-case__subtitle,
+#sphere-business-plan .nokia-case__subtitle,
+#sphere-personas .nokia-case__subtitle,
+#sphere-app-overview .nokia-case__subtitle,
+#sphere-discovery .nokia-case__subtitle {
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-weight: 700;
+  font-synthesis: weight;
+  line-height: 29px;
+  letter-spacing: -0.48px;
+}
+
+#sphere-usps .nokia-case__section-intro .nokia-case__label,
+#sphere-personas .nokia-case__section-intro .nokia-case__label,
+#sphere-app-overview .nokia-case__section-intro .nokia-case__label,
+#sphere-kpis .nokia-case__section-intro .nokia-case__label,
+#sphere-discovery .nokia-case__section-intro .nokia-case__label {
+  line-height: 19px;
+}
+
+#sphere-app-overview {
+  gap: 24px;
+}
+
+#sphere-surveys .nokia-case__stat-grid,
+#sphere-personas,
+#sphere-usps .nokia-case__usp-grid,
+#sphere-business-plan .nokia-case__plan-cards {
+  max-width: calc(
+    100% * var(--case-study-title-columns) / var(--layout-main-columns)
+  );
+}
+
+#sphere-usps .nokia-case__usp-grid {
+  gap: 48px 16px;
+}
+
+#sphere-surveys .nokia-case__stat-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.nokia-case__persona-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nokia-case__persona-avatar--sphere img {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nokia-case__persona-bio--italic {
+  font-style: italic;
+}
+
+.nokia-case__persona-bio--italic p {
+  margin: 0;
+}
+
+.nokia-case__persona-bio--italic p + p {
+  margin-top: 0;
+}
+
+.nokia-case__usp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 16px;
+  width: 100%;
+}
+
+.nokia-case__usp-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 96px;
+}
+
+.nokia-case__usp-title {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 16px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.02em;
+}
+
+.nokia-case__tag--bold {
+  font-weight: 700;
+}
+
+
+.nokia-case__plan-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 24px;
+  background: #f6f7fb;
+}
+
+.nokia-case__plan-header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.nokia-case__plan-title {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 24px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.nokia-case__plan-price {
+  margin: 0;
+  font-family: var(--font-bricolage);
+  font-size: 24px;
+  font-weight: 700;
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  opacity: 0.4;
+}
+
+.nokia-case__plan-card .nokia-case__body {
+  margin: 0;
+  max-width: none;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.28px;
+}
+
+
+@media (max-width: 900px) {
+  .nokia-case {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .nokia-case__headline {
+    max-width: 100%;
+  }
+
+  .nokia-case__hero-group {
+    gap: 64px;
+  }
+
+  .nokia-case__meta-row {
+    gap: 32px;
+  }
+
+  .nokia-case__columns,
+  .nokia-case__columns--two {
+    grid-template-columns: 1fr;
+  }
+
+  .nokia-case__column {
+    padding-right: 0;
+  }
+
+  .nokia-case__stat-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .nokia-case__stat-card {
+    width: 100%;
+  }
+
+  #wise-discovery .nokia-case__stat-block,
+  #wise-findings .nokia-case__stat-grid,
+  #wise-usps .nokia-case__usp-rows,
+  #wise-personas,
+  #wise-usability-testing .nokia-case__stat-grid,
+  #sphere-surveys .nokia-case__stat-grid,
+  #sphere-personas,
+  #sphere-usps .nokia-case__usp-grid,
+  #sphere-business-plan .nokia-case__business-plan,
+  #sphere-business-plan .nokia-case__plan-cards {
+    max-width: none;
+    width: 100%;
+  }
+
+  .nokia-case__plan-header {
+    white-space: normal;
+  }
+
+  .nokia-case__key-partners-row {
+    flex-direction: column;
+  }
+
+  #sphere-surveys .nokia-case__stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nokia-case__persona-grid,
+  .nokia-case__persona-grid--three {
+    grid-template-columns: 1fr;
+  }
+
+  .nokia-case__usp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nokia-case__usp-item {
+    padding-right: 0;
+  }
+
+  .nokia-case__tool-note--with-icon {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .nokia-case__tool-note--with-icon .nokia-case__tool-body {
+    max-width: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .nokia-case__plan-cards.nokia-case__plan-cards--row {
+    flex-direction: column;
+  }
+}

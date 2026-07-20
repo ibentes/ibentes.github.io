@@ -1,0 +1,64 @@
+.wise-cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1372 / 700;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.wise-cover__mobile {
+  display: none;
+}
+
+.wise-cover__desktop {
+  position: absolute;
+  inset: 0;
+}
+
+.wise-cover__phone {
+  position: absolute;
+  display: block;
+  max-width: none;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.wise-cover__phone--back {
+  left: 9.86%;
+  top: -11.08%;
+  width: 54.78%;
+  height: auto;
+  transform: rotate(0.8deg);
+}
+
+.wise-cover__phone--left {
+  left: 0;
+  top: 35.21%;
+  width: 55.39%;
+  height: auto;
+  transform: rotate(2.22deg);
+}
+
+.wise-cover__phone--center {
+  left: 27.68%;
+  top: 49%;
+  width: 58.31%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .wise-cover {
+    aspect-ratio: 1 / 1;
+  }
+
+  .wise-cover__mobile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .wise-cover__desktop {
+    display: none;
+  }
+}

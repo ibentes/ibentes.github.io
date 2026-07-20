@@ -1,0 +1,50 @@
+.project-section-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.project-section-nav button {
+  display: block;
+  width: max-content;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+  appearance: none;
+}
+
+.project-section-nav button:hover {
+  opacity: 1;
+}
+
+.project-section-nav button.is-active {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: none;
+}
+
+@media (max-width: 900px) {
+  .project-section-nav {
+    display: none;
+  }
+}

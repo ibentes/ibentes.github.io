@@ -1,0 +1,24 @@
+.project-nav-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.project-nav-details p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .project-nav-details {
+    display: none;
+  }
+}

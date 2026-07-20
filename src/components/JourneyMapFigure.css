@@ -1,0 +1,31 @@
+.nokia-journey-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1326 / 520;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.nokia-journey-map__legend {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.nokia-journey-map__legend span {
+  position: absolute;
+  top: calc(31 / 520 * 100%);
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #000000;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.nokia-journey-map__note {
+  position: absolute;
+  display: block;
+}

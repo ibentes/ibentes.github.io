@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #ffffff;
+  --lime: #bfff00;
+  --text: #000000;
+  --spacing-8: 8px;
+  --spacing-40: clamp(20px, 4vw, 40px);
+  --gutter-inline-start: max(var(--spacing-40), env(safe-area-inset-left));
+  --gutter-inline-end: max(var(--spacing-40), env(safe-area-inset-right));
+  --gutter-block-end: max(var(--spacing-40), env(safe-area-inset-bottom));
+  --font-inter: 'Inter', sans-serif;
+  --font-bricolage: 'Bricolage Grotesque', sans-serif;
+  --content-max-width: 1920px;
+  --layout-columns: 8;
+  --layout-main-columns: 6;
+  --case-study-title-columns: 5;
+  --title-font-size: clamp(40px, 4.2vw + 1rem, 64px);
+  --motion-content-duration: 0.9s;
+  --motion-content-exit-fade-duration: 0.38s;
+  --motion-content-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 901px) {
+  :root {
+    --title-font-size: clamp(40px, 1.5vw + 1.5rem, 48px);
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --title-font-size: clamp(48px, 1.2vw + 1.75rem, 64px);
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 900px) {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  html.gallery-revealed {
+    overflow: hidden;
+  }
+
+  body,
+  #root {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.font-bricolage {
+  font-family: var(--font-bricolage);
+  font-variation-settings: 'opsz' 14, 'wdth' 100;
+  font-synthesis: none;
+  line-height: 0.972;
+  letter-spacing: -0.01em;
+}
