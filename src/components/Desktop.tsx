@@ -309,24 +309,8 @@ export default function Desktop() {
     if (isAboutTransitioning) return
 
     if (isRevealed) {
-      setIsGalleryNavFading(true)
       setTitleLayout('hello-work')
-      setTitleProgress(1)
-
-      const gallery = galleryRef.current
-      if (gallery) {
-        void gallery.offsetHeight
-      }
-
-      syncContentFadeEnter(() => {
-        goHome()
-        animateTitleProgress(0)
-      })
-
-      aboutTransitionTimerRef.current = window.setTimeout(() => {
-        aboutTransitionTimerRef.current = null
-        setIsGalleryNavFading(false)
-      }, TITLE_TRANSITION_MS)
+      goHome()
       return
     }
 
