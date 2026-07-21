@@ -149,10 +149,9 @@ export default function NokiaCaseStudy() {
             <div className="nokia-case__meta-block">
               <SectionLabel>NDA Agreement</SectionLabel>
               <BodyText>
-                This work is covered by a non-disclosure agreement, so l am
-                unable to share specific details. The case focuses on my
-                approach, decisions, and impact while respecting the
-                confidentiality of the product.
+                This work is covered by a non-disclosure agreement, so this case
+                study includes only what I can share publicly. If you&apos;d like
+                to see more or talk through the process, feel free to reach out.
               </BodyText>
             </div>
           </div>
