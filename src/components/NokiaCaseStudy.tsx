@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react'
-import DesignProcessTimeline from './DesignProcessTimeline'
 import NokiaCover from './NokiaCover'
 import './NokiaCaseStudy.css'
 
@@ -207,7 +206,14 @@ export default function NokiaCaseStudy() {
             while staying flexible.
           </BodyText>
         </div>
-        <DesignProcessTimeline />
+        <figure className="nokia-case__design-process-figure">
+          <img
+            src="/work/nokia/first-delivery.png"
+            alt=""
+            width={4096}
+            height={815}
+          />
+        </figure>
       </section>
 
       <section
@@ -217,14 +223,14 @@ export default function NokiaCaseStudy() {
         <div className="nokia-case__section-intro nokia-case__section-intro--discovery">
           <SectionLabel>Discovery and definition</SectionLabel>
           <SectionTitle>
-            From zero domain knowledge to user journey mapping
+            From zero domain knowledge to user story mapping
           </SectionTitle>
           <BodyText>
             Designing for a highly technical, expert-driven product required
             building a strong understanding of the system. I was particularly
             involved in gathering and studying the available documentation,
             validating interpretations, and clarifying assumptions with
-            stakeholders. From this, I developed user journey maps that connected
+            stakeholders. From this, I developed user story maps that connected
             personas to their tasks and workflows, providing a structured visual
             foundation of the platform&apos;s key concepts and interactions.
           </BodyText>
